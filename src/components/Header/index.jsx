@@ -7,7 +7,7 @@ export const Header = props => {
   return (
     <div className="header">
       <Logo />
-      <NavLink link={props.link} />
+      <NavLink link={props.link} to={props.to} />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const NavLink = props => {
   return (
-    <Link className="nav-link" to="/about">About</Link>
+    <Link className="nav-link" to={`${props.to}`}>{props.link}</Link>
   );
 };
 
