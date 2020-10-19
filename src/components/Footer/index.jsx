@@ -4,7 +4,7 @@ import './style.scss';
 const Footer = () => {
   return (
     <footer>
-      <p>Built by @marjo and @marti</p>
+      <p>Built by awesome team</p>
     </footer>
   );
 }
