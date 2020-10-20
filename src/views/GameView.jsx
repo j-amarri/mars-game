@@ -3,9 +3,9 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 import './GameView.scss';
 
-// Importing data
 import personas from './../data/persona.json';
 import challenges from './../data/challenges.json';
+import tools from './../data/tools.json';
 
 import FilterBar from './../components/FilterBar';
 import Card from './../components/Card';
@@ -15,7 +15,7 @@ import Footer from './../components/Footer';
 class GameView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { category: 'challenges' };
+    this.state = { category: 'tools', starred: [] };
   }
 
   // const responsive = {
@@ -26,12 +26,19 @@ class GameView extends React.Component {
 
   render() {
     var data;
-    if (this.state.category === 'personas') {
-      data = personas;
-    } else if (this.state.category === 'challenges') {
-      data = challenges;
+    switch (this.state.category) {
+      case 'personas':
+        data = personas;
+        break;
+      case 'challenges':
+        data = challenges;
+        break;
+      case 'tools':
+        data = tools;
+        break;
+      default:
+        data = personas;
     }
-    console.log(data);
     return (
       <div className="game">
         <FilterBar />

@@ -1,1 +1,52 @@
-
+[
+  {
+    "type": "tool",
+    "title": "AI powered 'cobots'",
+    "image": "/cards/tools/1.png",
+    "points": 3,
+    "what": [
+      "Reduce the need for humans in clean rooms",
+      "Make more reliable all satellites and spacecraft manufacturing steps that can be error-prone",
+      "Speed up the response of satellites to natural disasters",
+      "Analyse and review weather and environmental satellite images to monitor Earth and Mars"
+    ],
+    "how": [
+      "Uses the power of deep learning and AI-enabled recognition",
+      "Detailed imagery from a satellite can help those on the ground to see victims, determine the course of the disaster, and more"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "Circadian rhytm control",
+    "image": "/cards/tools/2.png",
+    "points": 1,
+    "what": [
+      "Induces a hibernation state during long-duration spaceflight",
+      "Prevents sleep disorders on Mars caused by a lack of a true diurnal cycle of sunlight (encompassing the same range of colour temperatures and intensities of sunlight experienced on Earth)"
+    ],
+    "how": [
+      "The intensity of light gets brighter as you proceed through the beginning of the workday",
+      "The light temperature gets progressively higher and the colour cooler to mimic the diurnal cycle",
+      "As the workday ends, the light gets only slightly dimmer but significantly lower in temperature and warmer in colour",
+      "As the sleep cycle begins, the light intensity dims, exposing occupants to even less blue light"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "CRISPR",
+    "image": "/cards/tools/3.png",
+    "points": 3,
+    "what": [
+      "Mars One colonists have modified DNA to prevent radiation-induced genetic damage",
+      "Address global food shortages by genetically modifying crops to stay fresh longer during longdistance transport",
+      "Allows crops to adjust and be fit to Mars atmosphere"
+    ],
+    "how": [
+      "The protein Cas9 (or CRISPR-associated) is an enzyme that acts like a pair of molecular scissors, capable of cutting strands of DNA",
+      "Long-term space travel and colonization of other planets exposes astronauts to the harsh environment of space for extended periods of time, so self-repairing DNA makes astronauts Sresistant to radiation"
+    ],
+    "starred": false
+  }
+]
