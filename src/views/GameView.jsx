@@ -5,6 +5,7 @@ import './GameView.scss';
 
 // Importing data
 import personas from './../data/persona.json';
+import challenges from './../data/challenges.json';
 
 import FilterBar from './../components/FilterBar';
 import Card from './../components/Card';
@@ -14,7 +15,7 @@ import Footer from './../components/Footer';
 class GameView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { personas };
+    this.state = { category: 'challenges' };
   }
 
   // const responsive = {
@@ -24,10 +25,13 @@ class GameView extends React.Component {
   // };
 
   render() {
-    // const listCardImages = this.state.personas.map(persona => (
-    //   <Card props={persona.image} />
-    // ));
-    // console.log(listCardImages);
+    var data;
+    if (this.state.category === 'personas') {
+      data = personas;
+    } else if (this.state.category === 'challenges') {
+      data = challenges;
+    }
+    console.log(data);
     return (
       <div className="game">
         <FilterBar />
@@ -41,9 +45,9 @@ class GameView extends React.Component {
           disableButtonsControls={true}
           disableDotsControls={true}
         >
-          <Card image={personas[0].image} />
-          <Card image={personas[1].image} />
-          <Card image={personas[2].image} />
+          {data.map(item => {
+            return <Card {...item} key={item.image} />;
+          })}
         </AliceCarousel>
         <CardInfo props={personas} />
         <Footer />

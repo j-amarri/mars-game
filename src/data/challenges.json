@@ -1,0 +1,34 @@
+[
+  {
+    "type": "challenge",
+    "title": "Isolation",
+    "image": "/cards/challenges/1.png",
+    "points": 6,
+    "questions": [
+      "How might we improve the mental health of Mars citizens so that they feel less isolated?",
+      "Which products & services can you develop to reduce anxiety from the simulated environment & isolation?"
+    ],
+    "starred": false
+  },
+  {
+    "type": "challenge",
+    "title": "Social structures",
+    "image": "/cards/challenges/2.png",
+    "points": 3,
+    "questions": [
+      "How does your product change or enable new ways to interact?",
+      "In what ways might the community itself be an asset?"
+    ],
+    "starred": false
+  },
+  {
+    "type": "challenge",
+    "title": "Food",
+    "image": "/cards/challenges/3.png",
+    "points": 6,
+    "questions": [
+      "Which services around food could you envision to develop new habits or experiences?"
+    ],
+    "starred": false
+  }
+]
