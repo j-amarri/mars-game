@@ -1,7 +1,7 @@
 [
   {
     "type": "persona",
-    "role": "The Cyborg Scientist",
+    "title": "The Cyborg Scientist",
     "image": "/cards/persona/1.png",
     "quote": "The only way forward is to sacrifice myself to save the earth",
     "name": "Martha",
@@ -20,7 +20,7 @@
   },
   {
     "type": "persona",
-    "role": "The Space Migrant",
+    "title": "The Space Migrant",
     "image": "/cards/persona/2.png",
     "quote": "I miss my family terribly but I know that this job will pay for their education so they do not have to do the same job than me",
     "name": "Selim",
@@ -39,7 +39,7 @@
   },
   {
     "type": "persona",
-    "role": "The Earth Activist",
+    "title": "The Earth Activist",
     "image": "/cards/persona/3.png",
     "quote": "Why are we spending these thrillions of euros for Mars exploration? We need this money to save the planet Earth!",
     "name": "Maya",
