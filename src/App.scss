@@ -1,21 +1,16 @@
-/* 
-grey: cfdbd5
-light gray: e8eddf
-yellow: f5cb5c
-dark dark: 242423
-dark: 333533 
-*/
+$yellow-primary: rgb(206, 206, 9);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 .App {
+  margin: 0 auto;
   text-align: left;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #333533;
-  color: #f5cb5c;
+  font-family: 'Graphik, sans-serif';
+  background: #000000;
+  color: $yellow-primary;
 }
 
 @media (min-width: 600px) {

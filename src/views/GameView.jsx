@@ -8,7 +8,9 @@ import challenges from './../data/challenges.json';
 import tools from './../data/tools.json';
 
 import Card from './../components/Card';
-import CardInfo from './../components/CardInfo';
+import InfoPersona from '../components/InfoPersona';
+import InfoChallenge from '../components/InfoChallenge';
+import InfoTool from '../components/InfoTool';
 import Footer from './../components/Footer';
 
 class GameView extends React.Component {
@@ -71,12 +73,30 @@ class GameView extends React.Component {
           disableDotsControls={true}
         >
           {data.map(item => {
-            return (
-              <div key={item.title}>
-                <Card image={item.image} />
-                <CardInfo {...item} />
-              </div>
-            );
+            if (item.type === 'persona') {
+              return (
+                <div key={item.title}>
+                  <Card image={item.image} />
+                  <InfoPersona {...item} />
+                </div>
+              );
+            } else if (item.type === 'tool') {
+              return (
+                <div key={item.title}>
+                  <Card image={item.image} />
+                  <InfoTool {...item} />
+                </div>
+              );
+            } else if (item.type === 'challenge') {
+              return (
+                <div key={item.title}>
+                  <Card image={item.image} />
+                  <InfoChallenge {...item} />
+                </div>
+              );
+            } else {
+              return <h1>Error</h1>;
+            }
           })}
         </Carousel>
         <Footer />
