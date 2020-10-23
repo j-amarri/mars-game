@@ -16,18 +16,18 @@ import Footer from './../components/Footer';
 class GameView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { category: 'tools', starred: [] };
+    this.state = { category: 'personas', cardIndex: 0, starred: [] };
   }
-
-  // const responsive = {
-  //   0: { items: 1 },
-  //   568: { items: 2 },
-  //   1024: { items: 3 }
-  // };
 
   handleClick = event => {
     this.setState({
       category: event.target.value
+    });
+  };
+
+  onSlideChanged = event => {
+    this.setState({
+      cardIndex: event.item
     });
   };
 
@@ -46,6 +46,7 @@ class GameView extends React.Component {
       default:
         data = personas;
     }
+
     return (
       <div className="game">
         <div className="categories-bar">
@@ -63,42 +64,28 @@ class GameView extends React.Component {
           </button>
         </div>
         <Carousel
-          mouseTracking
-          // items={items}
-          //activeIndex={2}
-          paddingLeft={60}
-          paddingRight={60}
-          // responsive={responsive}
           disableButtonsControls={true}
           disableDotsControls={true}
+          onSlideChanged={this.onSlideChanged}
         >
           {data.map(item => {
-            if (item.type === 'persona') {
-              return (
-                <div key={item.title}>
-                  <Card image={item.image} />
-                  <InfoPersona {...item} />
-                </div>
-              );
-            } else if (item.type === 'tool') {
-              return (
-                <div key={item.title}>
-                  <Card image={item.image} />
-                  <InfoTool {...item} />
-                </div>
-              );
-            } else if (item.type === 'challenge') {
-              return (
-                <div key={item.title}>
-                  <Card image={item.image} />
-                  <InfoChallenge {...item} />
-                </div>
-              );
-            } else {
-              return <h1>Error</h1>;
-            }
+            return (
+              <div key={item.title}>
+                <Card image={item.image} />
+              </div>
+            );
           })}
         </Carousel>
+
+        {this.state.category === 'personas' ? (
+          <InfoPersona {...data[this.state.cardIndex]} />
+        ) : this.state.category === 'challenges' ? (
+          <InfoChallenge {...data[this.state.cardIndex]} />
+        ) : this.state.category === 'tools' ? (
+          <InfoTool {...data[this.state.cardIndex]} />
+        ) : (
+          'error'
+        )}
         <Footer />
       </div>
     );

@@ -15,13 +15,13 @@ const InfoPersona = props => {
       <h3>OBJECTIVES</h3>
       <div>
         {props.objectives.map((txt, i) => (
-          <p key={i}>{txt}</p>
+          <p key={i}>- {txt}</p>
         ))}
       </div>
       <h3>PAINS</h3>
       <div>
         {props.pains.map((txt, i) => (
-          <p key={i}>{txt}</p>
+          <p key={i}>- {txt}</p>
         ))}
       </div>
     </div>

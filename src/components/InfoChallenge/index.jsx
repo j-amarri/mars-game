@@ -3,7 +3,7 @@ import './style.scss';
 
 const InfoChallenge = props => {
   return (
-    <div className="card-info">
+    <div className="challenge-info">
       <span>{props.points} points</span>
       <div>
         {props.questions.map((txt, i) => (
