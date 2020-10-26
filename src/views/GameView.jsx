@@ -12,6 +12,13 @@ import InfoPersona from '../components/InfoPersona';
 import InfoChallenge from '../components/InfoChallenge';
 import InfoTool from '../components/InfoTool';
 import Footer from './../components/Footer';
+import Button from './../components/Button';
+
+const responsive = {
+  0: { items: 1 },
+  568: { items: 2 },
+  1024: { items: 3 }
+};
 
 class GameView extends React.Component {
   constructor(props) {
@@ -25,7 +32,7 @@ class GameView extends React.Component {
     });
   };
 
-  onSlideChanged = event => {
+  onSlideChange = event => {
     this.setState({
       cardIndex: event.item
     });
@@ -50,23 +57,38 @@ class GameView extends React.Component {
     return (
       <div className="game">
         <div className="categories-bar">
-          <button value={'personas'} onClick={this.handleClick}>
-            Personas
-          </button>
-          <button value={'challenges'} onClick={this.handleClick}>
-            Challenges
-          </button>
-          <button value={'tools'} onClick={this.handleClick}>
-            Tools
-          </button>
-          <button value={'starred'} onClick={this.handleClick}>
-            Your deck
-          </button>
+          <Button
+            value={'personas'}
+            name={'Persona'}
+            style={{ border: '1px solid yellow', color: 'yellow' }}
+            onClick={this.handleClick}
+          />
+          <Button
+            value={'tools'}
+            name={'Tools'}
+            style={{ border: '1px solid #e6004c', color: '#e6004c' }}
+            onClick={this.handleClick}
+          />
+          <Button
+            value={'challenges'}
+            name={'Challenges'}
+            style={{ border: '1px solid #1e8fd5', color: '#1e8fd5' }}
+            onClick={this.handleClick}
+          />
+          <Button
+            value={'starred'}
+            name={'Your deck'}
+            style={{ border: '1px solid green', color: 'green' }}
+            onClick={this.handleClick}
+          />
         </div>
         <Carousel
+          paddingLeft={60}
+          paddingRight={60}
+          responsive={responsive}
           disableButtonsControls={true}
           disableDotsControls={true}
-          onSlideChanged={this.onSlideChanged}
+          onSlideChange={this.onSlideChange}
         >
           {data.map(item => {
             return (

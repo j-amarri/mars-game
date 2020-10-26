@@ -1,9 +1,19 @@
-button {
-  background-color: #000000;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  color: #333533;
-  padding: 5px 50px;
-  border: 1px solid rgb(206, 206, 9);
-  border-radius: 5px;
+.filters {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    //padding: 5px 50px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20px;
+  }
+
+  span {
+    text-align: center;
+    border: none !important;
+  }
 }

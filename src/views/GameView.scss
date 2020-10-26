@@ -2,6 +2,7 @@
 
 .categories-bar {
   display: flex;
+  margin: 10px 10px;
   flex-direction: row;
   justify-content: space-evenly;
 
@@ -18,5 +19,9 @@
 }
 
 .alice-carousel__wrapper {
-  padding-left: 20px !important;
+  margin: 20px 0px;
+}
+
+.alice-carousel__stage-item {
+  padding: 0px 20px;
 }
