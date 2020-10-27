@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/scss/alice-carousel.scss';
+import { Tween } from 'react-gsap';
 import './GameView.scss';
 
 import personas from './../data/persona.json';
@@ -32,7 +33,7 @@ class GameView extends React.Component {
     });
   };
 
-  onSlideChange = event => {
+  onSlideChanged = event => {
     this.setState({
       cardIndex: event.item
     });
@@ -86,9 +87,10 @@ class GameView extends React.Component {
           paddingLeft={60}
           paddingRight={60}
           responsive={responsive}
+          infinite={true}
           disableButtonsControls={true}
           disableDotsControls={true}
-          onSlideChange={this.onSlideChange}
+          onSlideChanged={this.onSlideChanged}
         >
           {data.map(item => {
             return (
@@ -98,7 +100,6 @@ class GameView extends React.Component {
             );
           })}
         </Carousel>
-
         {this.state.category === 'personas' ? (
           <InfoPersona {...data[this.state.cardIndex]} />
         ) : this.state.category === 'challenges' ? (

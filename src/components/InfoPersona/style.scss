@@ -1,12 +1,22 @@
 .persona-info {
   color: rgb(206, 206, 9);
-  margin: 0 20px;
+  margin: 50px 50px;
+  animation: ease-in;
+
+  @keyframes square {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: blue;
+    }
+  }
 
   .quote {
-    font-size: 12px;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    transition-delay: 2s;
   }
 
   .intro-info {
