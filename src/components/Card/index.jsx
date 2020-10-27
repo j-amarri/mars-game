@@ -5,6 +5,9 @@ const Card = props => {
   return (
     <div className="card">
       <img src={props.image} alt={props.image} />
+      <button type="submit">
+        <img className="star-icon" src="/icons/star.png" alt="star" />
+      </button>
     </div>
   );
 };

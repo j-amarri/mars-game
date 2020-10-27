@@ -2,5 +2,18 @@
   img {
     max-width: 100%;
     border-radius: 5px;
+    display: inline-block;
+    position: relative;
+  }
+
+  button {
+    position: absolute;
+    background-color: grey;
+    bottom: 12%;
+    right: 12%;
+  }
+
+  .star-icon {
+    height: 20px;
   }
 }

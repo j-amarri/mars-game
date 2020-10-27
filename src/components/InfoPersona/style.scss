@@ -1,16 +1,6 @@
 .persona-info {
   color: rgb(206, 206, 9);
   margin: 50px 50px;
-  animation: ease-in;
-
-  @keyframes square {
-    from {
-      background-color: red;
-    }
-    to {
-      background-color: blue;
-    }
-  }
 
   .quote {
     font-size: 1rem;
