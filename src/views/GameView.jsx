@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/scss/alice-carousel.scss';
-import { Tween } from 'react-gsap';
 import './GameView.scss';
 
 import personas from './../data/persona.json';
@@ -27,9 +26,15 @@ class GameView extends React.Component {
     this.state = { category: 'personas', cardIndex: 0, starred: [] };
   }
 
-  handleClick = event => {
+  handleCategoryClick = event => {
     this.setState({
       category: event.target.value
+    });
+  };
+
+  handleStarClick = item => {
+    this.setState({
+      starred: this.state.starred.concat(item)
     });
   };
 
@@ -51,10 +56,12 @@ class GameView extends React.Component {
       case 'tools':
         data = tools;
         break;
+      case 'starred':
+        data = this.state.starred;
+        break;
       default:
         data = personas;
     }
-
     return (
       <div className="game">
         <div className="categories-bar">
@@ -62,25 +69,25 @@ class GameView extends React.Component {
             value={'personas'}
             name={'Persona'}
             style={{ border: '1px solid yellow', color: 'yellow' }}
-            onClick={this.handleClick}
+            onClick={this.handleCategoryClick}
           />
           <Button
             value={'tools'}
             name={'Tools'}
             style={{ border: '1px solid #e6004c', color: '#e6004c' }}
-            onClick={this.handleClick}
+            onClick={this.handleCategoryClick}
           />
           <Button
             value={'challenges'}
             name={'Challenges'}
             style={{ border: '1px solid #1e8fd5', color: '#1e8fd5' }}
-            onClick={this.handleClick}
+            onClick={this.handleCategoryClick}
           />
           <Button
             value={'starred'}
             name={'Your deck'}
             style={{ border: '1px solid green', color: 'green' }}
-            onClick={this.handleClick}
+            onClick={this.handleCategoryClick}
           />
         </div>
         <Carousel
@@ -95,20 +102,22 @@ class GameView extends React.Component {
           {data.map(item => {
             return (
               <div key={item.title}>
-                <Card image={item.image} />
+                <Card {...item} starClick={this.handleStarClick} />
               </div>
             );
           })}
         </Carousel>
-        {this.state.category === 'personas' ? (
-          <InfoPersona {...data[this.state.cardIndex]} />
-        ) : this.state.category === 'challenges' ? (
-          <InfoChallenge {...data[this.state.cardIndex]} />
-        ) : this.state.category === 'tools' ? (
-          <InfoTool {...data[this.state.cardIndex]} />
-        ) : (
-          'error'
-        )}
+        {data.map(item => {
+          if (item.type === 'persona') {
+            return <InfoPersona {...item} key={item.title} />;
+          } else if (item.type === 'challenge') {
+            return <InfoChallenge {...item} key={item.title} />;
+          } else if (item.type === 'tool') {
+            return <InfoTool {...item} key={item.title} />;
+          } else {
+            return <p>error</p>;
+          }
+        })}
         <Footer />
       </div>
     );
