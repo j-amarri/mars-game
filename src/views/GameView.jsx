@@ -14,11 +14,11 @@ import InfoTool from '../components/InfoTool';
 import Footer from './../components/Footer';
 import Button from './../components/Button';
 
-const responsive = {
-  0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 }
-};
+// const responsive = {
+//   0: { items: 1 },
+//   568: { items: 2 },
+//   1024: { items: 3 }
+// };
 
 class GameView extends React.Component {
   constructor(props) {
@@ -28,7 +28,8 @@ class GameView extends React.Component {
 
   handleCategoryClick = event => {
     this.setState({
-      category: event.target.value
+      category: event.target.value,
+      cardIndex: 0
     });
   };
 
@@ -62,6 +63,7 @@ class GameView extends React.Component {
       default:
         data = personas;
     }
+
     return (
       <div className="game">
         <div className="categories-bar">
@@ -93,8 +95,8 @@ class GameView extends React.Component {
         <Carousel
           paddingLeft={60}
           paddingRight={60}
-          responsive={responsive}
-          infinite={true}
+          // responsive={responsive}
+          // infinite={true}
           disableButtonsControls={true}
           disableDotsControls={true}
           onSlideChanged={this.onSlideChanged}
@@ -107,17 +109,16 @@ class GameView extends React.Component {
             );
           })}
         </Carousel>
-        {data.map(item => {
-          if (item.type === 'persona') {
-            return <InfoPersona {...item} key={item.title} />;
-          } else if (item.type === 'challenge') {
-            return <InfoChallenge {...item} key={item.title} />;
-          } else if (item.type === 'tool') {
-            return <InfoTool {...item} key={item.title} />;
-          } else {
-            return <p>error</p>;
-          }
-        })}
+
+        {data[this.state.cardIndex].type === 'persona' ? (
+          <InfoPersona {...data[this.state.cardIndex]} />
+        ) : data[this.state.cardIndex].type === 'challenge' ? (
+          <InfoChallenge {...data[this.state.cardIndex]} />
+        ) : data[this.state.cardIndex].type === 'tool' ? (
+          <InfoTool {...data[this.state.cardIndex]} />
+        ) : (
+          <h2>Sorry mate</h2>
+        )}
         <Footer />
       </div>
     );
