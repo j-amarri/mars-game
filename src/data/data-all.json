@@ -1,0 +1,140 @@
+[
+  {
+    "type": "persona",
+    "title": "The Cyborg Scientist",
+    "image": "/cards/persona/1.png",
+    "quote": "The only way forward is to sacrifice myself to save the earth",
+    "name": "Martha",
+    "points": 2,
+    "objectives": [
+      "Living' fast-forward experiment",
+      "Recognition within the scientific community",
+      "Make history"
+    ],
+    "pains": [
+      "Drastic change in personal life",
+      "Considered not fully human, struggling sense of identity",
+      "Pressure for discovery & invention"
+    ],
+    "starred": false
+  },
+  {
+    "type": "persona",
+    "title": "The Space Migrant",
+    "image": "/cards/persona/2.png",
+    "quote": "I miss my family terribly but I know that this job will pay for their education so they do not have to do the same job than me",
+    "name": "Selim",
+    "points": 3,
+    "objectives": [
+      "High salary, able to provide for the family",
+      "Exciting professional challenges",
+      "Community, sense of belonging"
+    ],
+    "pains": [
+      "Loneliness, misses family",
+      "Struggles to adapt to the Mars way of living, culture shock",
+      "Social inequality"
+    ],
+    "starred": false
+  },
+  {
+    "type": "persona",
+    "title": "The Earth Activist",
+    "image": "/cards/persona/3.png",
+    "quote": "Why are we spending these thrillions of euros for Mars exploration? We need this money to save the planet Earth!",
+    "name": "Maya",
+    "points": 3,
+    "objectives": [
+      "Echo of admiration from the earth activist movement",
+      "Grow the movement",
+      "Unlocking of Influential public relations"
+    ],
+    "pains": [
+      "Worried that this will lead to the end of planet earth",
+      "Struggles with the lack of fund to overcome earth-related issues such as dramatic pollution"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "AI powered 'cobots'",
+    "image": "/cards/tools/1.png",
+    "points": 3,
+    "what": [
+      "Reduce the need for humans in clean rooms",
+      "Make more reliable all satellites and spacecraft manufacturing steps that can be error-prone",
+      "Speed up the response of satellites to natural disasters",
+      "Analyse and review weather and environmental satellite images to monitor Earth and Mars"
+    ],
+    "how": [
+      "Uses the power of deep learning and AI-enabled recognition",
+      "Detailed imagery from a satellite can help those on the ground to see victims, determine the course of the disaster, and more"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "Circadian rhytm control",
+    "image": "/cards/tools/2.png",
+    "points": 1,
+    "what": [
+      "Induces a hibernation state during long-duration spaceflight",
+      "Prevents sleep disorders on Mars caused by a lack of a true diurnal cycle of sunlight (encompassing the same range of colour temperatures and intensities of sunlight experienced on Earth)"
+    ],
+    "how": [
+      "The intensity of light gets brighter as you proceed through the beginning of the workday",
+      "The light temperature gets progressively higher and the colour cooler to mimic the diurnal cycle",
+      "As the workday ends, the light gets only slightly dimmer but significantly lower in temperature and warmer in colour",
+      "As the sleep cycle begins, the light intensity dims, exposing occupants to even less blue light"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "CRISPR",
+    "image": "/cards/tools/3.png",
+    "points": 3,
+    "what": [
+      "Mars One colonists have modified DNA to prevent radiation-induced genetic damage",
+      "Address global food shortages by genetically modifying crops to stay fresh longer during longdistance transport",
+      "Allows crops to adjust and be fit to Mars atmosphere"
+    ],
+    "how": [
+      "The protein Cas9 (or CRISPR-associated) is an enzyme that acts like a pair of molecular scissors, capable of cutting strands of DNA",
+      "Long-term space travel and colonization of other planets exposes astronauts to the harsh environment of space for extended periods of time, so self-repairing DNA makes astronauts Sresistant to radiation"
+    ],
+    "starred": false
+  },
+  {
+    "type": "challenge",
+    "title": "Isolation",
+    "image": "/cards/challenges/1.png",
+    "points": 6,
+    "questions": [
+      "How might we improve the mental health of Mars citizens so that they feel less isolated?",
+      "Which products & services can you develop to reduce anxiety from the simulated environment & isolation?"
+    ],
+    "starred": false
+  },
+  {
+    "type": "challenge",
+    "title": "Social structures",
+    "image": "/cards/challenges/2.png",
+    "points": 3,
+    "questions": [
+      "How does your product change or enable new ways to interact?",
+      "In what ways might the community itself be an asset?"
+    ],
+    "starred": false
+  },
+  {
+    "type": "challenge",
+    "title": "Food",
+    "image": "/cards/challenges/3.png",
+    "points": 6,
+    "questions": [
+      "Which services around food could you envision to develop new habits or experiences?"
+    ],
+    "starred": false
+  }
+]
