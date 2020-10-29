@@ -1,80 +1,77 @@
-import React from 'react';
-import Carousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/scss/alice-carousel.scss';
-import './GameView.scss';
+import React from 'react'
+import Carousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/scss/alice-carousel.scss'
+import './GameView.scss'
 
-import dataAll from './../data/data-all.json';
+import cards from './../data/data-all.json'
 
-import Card from './../components/Card';
-import InfoPersona from '../components/InfoPersona';
-import InfoChallenge from '../components/InfoChallenge';
-import InfoTool from '../components/InfoTool';
-import Footer from './../components/Footer';
-import Button from './../components/Button';
+import Card from './../components/Card'
+import InfoPersona from '../components/InfoPersona'
+import InfoChallenge from '../components/InfoChallenge'
+import InfoTool from '../components/InfoTool'
+import Footer from './../components/Footer'
+import Button from './../components/Button'
 
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
-  1024: { items: 3 }
-};
+  1024: { items: 3 },
+}
 
 class GameView extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       loaded: false,
-      cards: [],
       category: 'persona',
       cardIndex: 0,
-      starred: []
-    };
+      starred: [],
+    }
   }
 
   componentDidMount() {
+    // console.log('Mounted', dataAll)
     this.setState({
       loaded: true,
-      cards: dataAll
-      // cardActive: dataAll[0]
-    });
+    })
   }
 
-  filterByCategory = event => {
-    const category = event.target.value;
+  filterByCategory = (event) => {
+    const category = event.target.value
     this.setState({
-      category
-    });
-  };
+      category,
+    })
+  }
 
   get filteredCardsList() {
-    const category = this.state.category;
-    return this.state.cards.filter(card => card.type === category);
+    const category = this.state.category
+    return category === 'starred'
+      ? this.state.starred
+      : cards.filter((card) => card.type === category)
   }
 
   // to review
-  // handleStarClick = item => {
-  //   let items = [...this.state.starred.concat(item)];
-  //   console.log(item);
-  //   //let itemToChange = { ...items[1] };
-  //   //console.log(itemToChange);
-  //   //itemToChange.starred = true;
-  //   //items[item.slide] = itemToChange;
-  //   this.setState({
-  //     //starred: this.state.starred.concat(item)
-  //     starred: items
-  //   });
-  // };
-  ///
-
-  onSlideChanged = event => {
-    console.log(event);
+  handleStarClick = (item) => {
+    let items = [...this.state.starred.concat(item)]
+    //let itemToChange = { ...items[1] };
+    //console.log(itemToChange);
+    //itemToChange.starred = true;
+    //items[item.slide] = itemToChange;
     this.setState({
-      cardIndex: event.slide
-      // cardActive: event
-    });
-  };
+      //starred: this.state.starred.concat(item)
+      starred: items,
+    })
+  }
+
+  onSlideChanged = (event) => {
+    this.setState({
+      cardIndex: event.slide,
+    })
+    console.log('cardIndexUpdated', this.state.cardIndex)
+  }
 
   render() {
-    const cardsToShow = this.filteredCardsList;
+    const cardsToShow = this.filteredCardsList
 
     return (
       <div className="game">
@@ -101,54 +98,33 @@ class GameView extends React.Component {
             value={'starred'}
             name={'Your deck'}
             style={{ border: '1px solid green', color: 'green' }}
-            // onClick={this.filterByCategory}
+            onClick={this.filterByCategory}
           />
         </div>
         <Carousel
           paddingLeft={60}
           paddingRight={60}
-          activeIndex={0}
-          slideToIndex={this.state.cardIndex}
           responsive={responsive}
           disableButtonsControls={true}
           disableDotsControls={true}
           onSlideChanged={this.onSlideChanged}
         >
-          {cardsToShow.map(item => {
+          {cardsToShow.map((item) => {
             return (
               <div key={item.title}>
                 <Card {...item} starClick={this.handleStarClick} />
               </div>
-            );
+            )
           })}
         </Carousel>
 
-        <InfoPersona {...this.state.cardActive} />
-
-        {/* {cardsToShow.map(item => {
-          if (item.type === 'persona') {
-            return <InfoPersona {...item} />;
-          } else if (item.type === 'challenge') {
-            return <InfoChallenge {...item} />;
-          } else {
-            return <InfoTool {...item} />;
-          }
-        })} */}
-
-        {/* {cardsToShow[this.state.cardIndex].type === 'persona' ? (
-          <InfoPersona {...cardsToShow[this.state.cardIndex]} />
-        ) : cardsToShow[this.state.cardIndex].type === 'challenge' ? (
-          <InfoChallenge {...cardsToShow[this.state.cardIndex]} />
-        ) : cardsToShow[this.state.cardIndex].type === 'tool' ? (
-          <InfoTool {...cardsToShow[this.state.cardIndex]} />
-        ) : (
-          <h2>Sorry mate</h2>
-        )} */}
-
+        <InfoPersona {...cardsToShow[this.state.cardIndex]} />
+        <InfoChallenge {...cardsToShow[this.state.cardIndex]} />
+        <InfoTool {...cardsToShow[this.state.cardIndex]} />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default GameView;
+export default GameView

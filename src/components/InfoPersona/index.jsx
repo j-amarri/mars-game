@@ -1,7 +1,8 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import './style.scss'
 
-const InfoPersona = props => {
+const InfoPersona = (props) => {
+  if (props.type !== 'persona') return <div></div>
   return (
     <div className="persona-info">
       <p className="quote">{props.quote}</p>
@@ -25,7 +26,7 @@ const InfoPersona = props => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default InfoPersona;
+export default InfoPersona

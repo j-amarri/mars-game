@@ -1,7 +1,8 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import './style.scss'
 
-const InfoChallenge = props => {
+const InfoChallenge = (props) => {
+  if (props.type !== 'challenge') return <div></div>
   return (
     <div className="challenge-info">
       <span>{props.points} points</span>
@@ -11,7 +12,7 @@ const InfoChallenge = props => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default InfoChallenge;
+export default InfoChallenge

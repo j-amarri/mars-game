@@ -1,7 +1,8 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import './style.scss'
 
-const InfoTool = props => {
+const InfoTool = (props) => {
+  if (props.type !== 'tool') return <div></div>
   return (
     <div className="tool-info">
       <h2>{props.title}</h2>
@@ -19,7 +20,7 @@ const InfoTool = props => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default InfoTool;
+export default InfoTool
