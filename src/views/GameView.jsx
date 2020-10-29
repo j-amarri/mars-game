@@ -25,6 +25,7 @@ class GameView extends React.Component {
       loaded: false,
       category: 'persona',
       cardIndex: 0,
+      allCards: cards,
       starred: [],
     }
   }
@@ -47,19 +48,32 @@ class GameView extends React.Component {
     const category = this.state.category
     return category === 'starred'
       ? this.state.starred
-      : cards.filter((card) => card.type === category)
+      : this.state.allCards.filter((card) => card.type === category)
   }
 
   // to review
   handleStarClick = (item) => {
-    let items = [...this.state.starred.concat(item)]
-    //let itemToChange = { ...items[1] };
-    //console.log(itemToChange);
-    //itemToChange.starred = true;
-    //items[item.slide] = itemToChange;
+    // get main deck copy
+    const cardDeck = this.state.allCards.slice()
+    // get card from main deck
+    let card = cardDeck.find((elem) => {
+      return elem.title === item.title
+    })
+    // check if card is already in starred list
+    const index = this.state.starred.indexOf(card)
+    card.starred = index === -1 // if item is not on starred, make it starred
+
+    let items
+    if (card.starred) {
+      items = [...this.state.starred.concat(card)]
+    } else {
+      items = this.state.starred.slice() //copy starred array
+      items.splice(index, 1) // remove item from array
+    }
+
     this.setState({
-      //starred: this.state.starred.concat(item)
       starred: items,
+      allCards: cardDeck,
     })
   }
 
