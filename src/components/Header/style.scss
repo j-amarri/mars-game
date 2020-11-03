@@ -1,9 +1,12 @@
+@use "./../../assets/colors.scss";
+
 .header {
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin: 10px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // padding: 10px 10px;
-  // background-color: #f5cb5c;
-  // color: #333533;
+  color: colors.$primary-col;
 }

@@ -1,6 +1,39 @@
-$yellow-primary: rgb(206, 206, 9);
+$primary-col: #eb5d3a;
+$primary-background: #000000;
+$primary-text: #ffffff;
+$primary-overlay-col: rgba(0, 0, 0, 0.3);
+$secondary-overlay-col: rgba(248, 248, 248, 0.82);
+$tertiary-overlay-col: #ebebec;
+$gradient-background: linear-gradient(0.25turn, #eb5b38, #eb6d46, #e78b52);
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@font-face {
+  font-family: 'Space';
+  src: url(./assets/fonts/SPACE.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url(./assets/fonts/Archivo-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url(./assets/fonts/Archivo-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url(./assets/fonts/Archivo-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Archivo Black';
+  src: url(./assets/fonts/ArchivoBlack-Regular.ttf);
+}
 
 .App {
   margin: 0 auto;
@@ -8,13 +41,32 @@ $yellow-primary: rgb(206, 206, 9);
 }
 
 body {
-  font-family: 'Graphik', sans-serif;
+  font-family: 'Archivo', sans-serif;
   background: #000000;
-  color: $yellow-primary;
+  color: $primary-text;
 }
 
 @media (min-width: 600px) {
   body {
     background: #242423;
   }
+}
+
+h1 {
+  font-family: 'Space', sans-serif;
+  letter-spacing: 2.38px;
+}
+
+h2 {
+  font-family: 'Archivo Black';
+  line-height: 25px;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
 }
