@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-// import Button from '../components/Button';
 import './WelcomeView.scss';
 
 import { ReactComponent as MarsImage } from './../assets/images/mars.svg';
@@ -39,8 +38,10 @@ function WelcomeView() {
         </p>
       </div>
       <div className="welcome-info">
-        <h2>HOW TO PLAY</h2>
-        <BsArrowRight size="30px" />
+        <div className="how-bar">
+          <h2>HOW TO PLAY</h2>
+          <BsArrowRight size="30px" />
+        </div>
         <AstronautImage className="astrounaut-image" />
         <h3>Meet your team</h3>
         <p>
