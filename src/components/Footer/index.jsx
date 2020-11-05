@@ -4,9 +4,11 @@ import './style.scss';
 const Footer = () => {
   return (
     <footer>
-      <p>Built by awesome team</p>
+      <p>Made on Planet Earth with</p>
+      <p>Design: Martina Bonetti, Marjorie Broudieu</p>
+      <p>Website: Alessandro Amarri</p>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -5,7 +5,7 @@ import NavLink from './../NavLink';
 export const Header = props => {
   return (
     <div className="header">
-      <p>Sound off</p>
+      <span>Sound off</span>
       <NavLink link={props.link} to={props.to} />
     </div>
   );
