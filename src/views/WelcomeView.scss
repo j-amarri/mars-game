@@ -29,12 +29,13 @@
 .title-intro {
   position: absolute;
   font-size: 27px;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .image-intro {
+  width: 195px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -102,9 +103,11 @@
 }
 
 .satellite-image {
+  width: 180px;
   margin: 50px auto;
 }
 
 .gazing-image {
+  width: 273px;
   margin: 50px auto;
 }

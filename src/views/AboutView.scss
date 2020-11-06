@@ -1,4 +1,9 @@
 .about {
+  margin: 0px;
+  padding: 0px;
+}
+
+.about-content {
   display: flex;
   flex-direction: column;
   padding: 0px 40px;
@@ -26,5 +31,29 @@
 
   h2 {
     padding-left: 10px;
+  }
+}
+
+.contributors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contributor {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+
+  img {
+    width: 80px;
+  }
+
+  p {
+    width: 80px;
+    font-size: 12px;
+    font-style: italic;
   }
 }

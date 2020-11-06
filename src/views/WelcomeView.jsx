@@ -5,19 +5,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './WelcomeView.scss';
 
-import { ReactComponent as MarsImage } from './../assets/images/mars.svg';
-// import { ReactComponent as DownArrow } from './../assets/icons/down-arrow.svg';
-import { ReactComponent as AstronautImage } from './../assets/images/astronaut.svg';
-import { ReactComponent as SatelliteImage } from './../assets/images/satellite.svg';
-import { ReactComponent as GazingImage } from './../assets/images/gazing.svg';
-
 function WelcomeView() {
   return (
     <div className="welcome-view">
       <Header link="About" to="/about" />
       <div className="intro">
         <h1 className="title-intro">MISSION MARS</h1>
-        <MarsImage className="image-intro" />
+        <img className="image-intro" src="/images/mars.png" alt="mars" />
       </div>
       <div className="welcome-section">
         <h3>Do you have what it takes to save life on Mars?</h3>
@@ -42,7 +36,11 @@ function WelcomeView() {
           <h2>HOW TO PLAY</h2>
           <BsArrowRight size="30px" />
         </div>
-        <AstronautImage className="astrounaut-image" />
+        <img
+          className="astrounaut-image"
+          src="/images/astronaut.png"
+          alt="astronaut"
+        />
         <h3>Meet your team</h3>
         <p>
           Mission Mars is a gamified remote design workshop about space
@@ -50,7 +48,11 @@ function WelcomeView() {
           will guide your team to solve the Mars colony challenges based on the
           colonists needs & technological possibilities.
         </p>
-        <SatelliteImage className="satellite-image" />
+        <img
+          className="satellite-image"
+          src="/images/satellite.png"
+          alt="satellite"
+        />
         <h3>Explore the cards</h3>
         <p>
           On this website you will be able to access the card deck necessary to
@@ -71,7 +73,7 @@ function WelcomeView() {
           technologies from the 2010's and new modern technologies that the
           colony is now deploying on Mars One.
         </p>
-        <GazingImage className="gazing-image" />
+        <img className="gazing-image" src="/images/gazing.png" alt="gazing" />
         <h3>Reflect on your ideas</h3>
         <p>
           Speculating on future interplanetary issues can be a way to explore
