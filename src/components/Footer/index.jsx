@@ -5,7 +5,7 @@ import './style.scss';
 const Footer = () => {
   return (
     <footer>
-      <hr class="solid" />
+      <hr className="solid" />
       <div className="designed">
         <h4>Designed on Earth with</h4>
         <AiOutlineHeart />

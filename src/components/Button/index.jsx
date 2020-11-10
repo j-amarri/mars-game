@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './style.scss';
 
-const Button = props => {
-  return (
-    <div className="filters">
-      <button value={props.value} onClick={props.onClick} style={props.style} />
-      <span style={props.style}>{props.name}</span>
-    </div>
-  );
-};
+class Button extends Component {
+  render() {
+    const TheIcon = this.props.icon;
+    return (
+      <div className="filters">
+        <button
+          value={this.props.value}
+          onClick={this.props.onClick}
+          style={this.props.style}
+        >
+          <img src={TheIcon} alt="" />
+          <span>{this.props.name}</span>
+        </button>
+      </div>
+    );
+  }
+}
 
 export default Button;

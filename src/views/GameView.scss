@@ -1,8 +1,14 @@
 @import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 
+.game {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./../assets/images/background.png);
+}
+
 .categories-bar {
   display: flex;
-  margin: 10px 10px;
+  margin: 30px 10px;
   flex-direction: row;
   justify-content: space-evenly;
 

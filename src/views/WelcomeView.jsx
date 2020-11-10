@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
+import DownArrow from './../assets/icons/down-arrow.svg';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './WelcomeView.scss';
@@ -16,13 +17,10 @@ function WelcomeView() {
       <div className="welcome-section">
         <h3>Do you have what it takes to save life on Mars?</h3>
         <h3>The future of humanity depends on you.</h3>
-        <Link to="/base">
-          <button className="button-base">Enter the base</button>
-        </Link>
         <Link to="/game">
           <button className="button-game">Enter the game</button>
         </Link>
-        {/* <DownArrow /> */}
+        <img src={DownArrow} alt="arrow-down" />
         <h3>The year is 2030.</h3>
         <p>
           Humanity didn’t meet the challenge of climate change and we need a
