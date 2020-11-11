@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BBCD1345-288B-4B1A-9139-0CB377440BAD</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.705882 0 0 0 0 0.749020 0 0 0 0 0.952941 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter x="-29.1%" y="-29.1%" width="158.1%" height="158.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.705882353   0 0 0 0 0.749019608   0 0 0 0 0.952941176  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Final-designs---cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Challenge---4.-limited-ressources-Copy" transform="translate(-16.000000, -799.000000)">
+            <g id="item/text-box-copy-5" transform="translate(0.000000, 787.000000)">
+                <g id="Group" transform="translate(20.000000, 16.000000)">
+                    <g id="Group" transform="translate(1.000000, 1.000000)" filter="url(#filter-1)">
+                        <g filter="url(#filter-2)">
+                            <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="11.184466" cy="18.1747573" r="1.39805825"></circle>
+                            <path d="M5.59223301,0 L2.7961165,0 C1.251864,0 0,1.251864 0,2.7961165 L0,5.59223301 L2.7961165,5.59223301 L2.7961165,2.7961165 L5.59223301,2.7961165 L5.59223301,0 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M19.5728155,0 L16.776699,0 L16.776699,2.7961165 L19.5728155,2.7961165 L19.5728155,5.59223301 L22.368932,5.59223301 L22.368932,2.7961165 C22.368932,1.251864 21.117068,0 19.5728155,0 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M19.5728155,19.5728155 L16.776699,19.5728155 L16.776699,22.368932 L19.5728155,22.368932 C21.117068,22.368932 22.368932,21.117068 22.368932,19.5728155 L22.368932,16.776699 L19.5728155,16.776699 L19.5728155,19.5728155 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M0,16.776699 L0,19.5728155 C0,21.117068 1.251864,22.368932 2.7961165,22.368932 L5.59223301,22.368932 L5.59223301,19.5728155 L2.7961165,19.5728155 L2.7961165,16.776699 L0,16.776699 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                            <path d="M11.8450485,9.62213592 C10.5478067,10.3527515 9.75695047,11.7370856 9.78640777,13.2256311 L9.78640777,13.9805825 L12.5825243,13.9805825 L12.5825243,13.2256311 C12.5588408,12.7668644 12.7829647,12.3306233 13.1697087,12.0827184 C14.976893,11.1116472 15.8163841,8.97578785 15.1540548,7.03408394 C14.4917255,5.09238004 12.5219857,3.91476978 10.4980853,4.25050939 C8.4741848,4.58624899 6.99018856,6.33679055 6.99029126,8.38834951 L9.78640777,8.38834951 C9.78720761,7.70454542 10.2825161,7.12166168 10.9572276,7.01051752 C11.6319392,6.89937337 12.2880387,7.29258751 12.5081285,7.9400048 C12.7282183,8.5874221 12.4477062,9.2990378 11.8450485,9.62213592 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

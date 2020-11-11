@@ -1,4 +1,5 @@
 $primary-col: #eb5d3a;
+$challenge-col: #b4bff3;
 $primary-background: #000000;
 $primary-text: #ffffff;
 $primary-overlay-col: rgba(0, 0, 0, 0.3);
@@ -33,6 +34,11 @@ $gradient-background: linear-gradient(0.25turn, #eb5b38, #eb6d46, #e78b52);
 @font-face {
   font-family: 'Archivo Black';
   src: url(./assets/fonts/ArchivoBlack-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url(./assets/fonts/Roboto-Light.ttf);
 }
 
 .App {
@@ -82,7 +88,8 @@ h4 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Light', sans-serif;
+  color: white;
   font-size: 16px;
   font-weight: lighter;
   letter-spacing: 0.22px;

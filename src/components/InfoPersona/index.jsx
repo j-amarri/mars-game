@@ -1,32 +1,40 @@
-import React from 'react'
-import './style.scss'
+import React from 'react';
+import { ReactComponent as Motto } from './../../assets/icons/motto.svg';
+import { ReactComponent as Objectives } from './../../assets/icons/objectives.svg';
+import { ReactComponent as Pains } from './../../assets/icons/pains.svg';
+import './style.scss';
 
-const InfoPersona = (props) => {
-  if (props.type !== 'persona') return <div></div>
+const InfoPersona = props => {
+  if (props.type !== 'persona') return <div></div>;
   return (
     <div className="persona-info">
-      <p className="quote">{props.quote}</p>
-      <div className="intro-info">
-        <div>
-          <h2>{props.name}</h2>
-          <h2>{props.title}</h2>
-        </div>
-        <span>{props.points} points</span>
+      <h2 className="title">{props.title}</h2>
+      <p className="subtitle">{props.quote}</p>
+      <div className="card-heading">
+        <Motto />
+        <h3>Motto</h3>
       </div>
-      <h3>OBJECTIVES</h3>
-      <div>
+      <p className="card-detail">"{props.quote}"</p>
+      <div className="card-heading">
+        <Objectives />
+        <h3>Objectives</h3>
+      </div>
+      <ul className="card-detail">
         {props.objectives.map((txt, i) => (
-          <p key={i}>- {txt}</p>
+          <li key={i}>{txt}</li>
         ))}
+      </ul>
+      <div className="card-heading">
+        <Pains />
+        <h3>Pains</h3>
       </div>
-      <h3>PAINS</h3>
-      <div>
+      <ul className="card-detail">
         {props.pains.map((txt, i) => (
-          <p key={i}>- {txt}</p>
+          <li key={i}>{txt}</li>
         ))}
-      </div>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default InfoPersona
+export default InfoPersona;

@@ -21,7 +21,7 @@
   {
     "type": "persona",
     "title": "The Space Migrant",
-    "image": "/cards/persona/2.png",
+    "image": "/cards/persona/the-space-migrant.png",
     "quote": "I miss my family terribly but I know that this job will pay for their education so they do not have to do the same job than me",
     "name": "Selim",
     "points": 3,
@@ -40,7 +40,7 @@
   {
     "type": "persona",
     "title": "The Earth Activist",
-    "image": "/cards/persona/3.png",
+    "image": "/cards/persona/the-earth-activist.png",
     "quote": "Why are we spending these thrillions of euros for Mars exploration? We need this money to save the planet Earth!",
     "name": "Maya",
     "points": 3,
@@ -108,7 +108,7 @@
   {
     "type": "challenge",
     "title": "Isolation",
-    "image": "/cards/challenges/1.png",
+    "image": "/cards/challenges/isolation.png",
     "points": 6,
     "questions": [
       "How might we improve the mental health of Mars citizens so that they feel less isolated?",
@@ -119,7 +119,7 @@
   {
     "type": "challenge",
     "title": "Social structures",
-    "image": "/cards/challenges/2.png",
+    "image": "/cards/challenges/social-structure.png",
     "points": 3,
     "questions": [
       "How does your product change or enable new ways to interact?",
@@ -129,10 +129,12 @@
   },
   {
     "type": "challenge",
-    "title": "Food",
-    "image": "/cards/challenges/3.png",
+    "title": "Limited Food Resources",
+    "subtitle": "Trade of goods between the earth & Mars are limited, increasing the need for  innovative food solutions that create rituals and limit waste at every stage of the chain",
+    "image": "/cards/challenges/food.png",
     "points": 6,
     "questions": [
+      "How might your idea replace single-use products? What would be its different life cycles?",
       "Which services around food could you envision to develop new habits or experiences?"
     ],
     "starred": false
