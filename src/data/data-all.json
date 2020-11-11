@@ -57,8 +57,9 @@
   },
   {
     "type": "tool",
-    "title": "AI powered 'cobots'",
-    "image": "/cards/tools/1.png",
+    "title": "AI powered 'Cobots'",
+    "subtitle": "Collaborative robots (‘cobots’) are AI-enabled systems and robotics, representing an integral part of the Mars One community",
+    "image": "/cards/tools/ai-chatbot.png",
     "points": 3,
     "what": [
       "Reduce the need for humans in clean rooms",
@@ -75,7 +76,8 @@
   {
     "type": "tool",
     "title": "Circadian rhytm control",
-    "image": "/cards/tools/2.png",
+    "subtitle": "The Lighting System to Improve Circadian Rhythm Control was designed and built to help regulate the sleep cycles of Mars One colonists",
+    "image": "/cards/tools/rhytm-control.png",
     "points": 1,
     "what": [
       "Induces a hibernation state during long-duration spaceflight",
@@ -92,7 +94,7 @@
   {
     "type": "tool",
     "title": "CRISPR",
-    "image": "/cards/tools/3.png",
+    "image": "/cards/tools/crispr-gene.png",
     "points": 3,
     "what": [
       "Mars One colonists have modified DNA to prevent radiation-induced genetic damage",
@@ -108,6 +110,7 @@
   {
     "type": "challenge",
     "title": "Isolation",
+    "subtitle": "CRISPRs are specialised stretches of DNA. CRISPR technology allows researchers to easily alter DNA sequences and modify gene function",
     "image": "/cards/challenges/isolation.png",
     "points": 6,
     "questions": [

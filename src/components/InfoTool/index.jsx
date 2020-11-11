@@ -1,26 +1,34 @@
-import React from 'react'
-import './style.scss'
+import React from 'react';
+import { ReactComponent as HowWorks } from './../../assets/icons/how-it-works.svg';
+import { ReactComponent as Benefits } from './../../assets/icons/benefits.svg';
+import './style.scss';
 
-const InfoTool = (props) => {
-  if (props.type !== 'tool') return <div></div>
+const InfoTool = props => {
+  if (props.type !== 'tool') return <div></div>;
   return (
     <div className="tool-info">
-      <h2>{props.title}</h2>
-      <span>{props.points} points</span>
-      <h3>WHAT DOES IT DO?</h3>
-      <div>
+      <h2 className="title">{props.title}</h2>
+      <p className="subtitle">{props.subtitle}</p>
+      <div className="card-heading">
+        <Benefits />
+        <h3>Benefits</h3>
+      </div>
+      <ul className="card-detail">
         {props.what.map((txt, i) => (
-          <p key={i}>- {txt}</p>
+          <li key={i}>{txt}</li>
         ))}
+      </ul>
+      <div className="card-heading">
+        <HowWorks />
+        <h3>How it works</h3>
       </div>
-      <h3>HOW DOES IT WORK?</h3>
-      <div>
+      <ul className="card-detail">
         {props.how.map((txt, i) => (
-          <p key={i}>- {txt}</p>
+          <li key={i}>{txt}</li>
         ))}
-      </div>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default InfoTool
+export default InfoTool;
