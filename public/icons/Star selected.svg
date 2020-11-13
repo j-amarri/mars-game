@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Star</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/favourites/selected" transform="translate(1.000000, 2.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+            <path d="M12,-0.129775731 L15.5648516,7.09340265 L23.5361023,8.25169316 L17.7680511,13.8741534 L19.1297033,21.8131947 L12,18.0648879 L4.87029671,21.8131947 L6.23194887,13.8741534 L0.46389775,8.25169316 L8.43514836,7.09340265 L12,-0.129775731 Z" id="Star"></path>
+        </g>
+    </g>
+</svg>

@@ -38,7 +38,6 @@ class GameView extends React.Component {
   }
 
   componentDidMount() {
-    // console.log('Mounted', dataAll)
     this.setState({
       loaded: true,
     })
