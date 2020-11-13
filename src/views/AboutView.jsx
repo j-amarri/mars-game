@@ -1,15 +1,15 @@
-import React from 'react';
-import { BsArrowLeft } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
-import Footer from './../components/Footer';
-import './AboutView.scss';
+import React from 'react'
+import { BsArrowLeft } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import Footer from './../components/Footer'
+import './AboutView.scss'
 
 function AboutView() {
   return (
     <div className="about">
       <div className="about-content">
         <div className="navbar">
-          <Link to="/welcome" style={{ color: 'white' }}>
+          <Link to="/" style={{ color: 'white' }}>
             <BsArrowLeft size="30px" />
           </Link>
           <h2>MISSION MARS</h2>
@@ -69,7 +69,7 @@ function AboutView() {
       </div>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default AboutView;
+export default AboutView
