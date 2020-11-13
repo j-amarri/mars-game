@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import './style.scss';
+import React, { Component } from 'react'
+import './style.scss'
 
 class Button extends Component {
   render() {
-    const TheIcon = this.props.icon;
+    const TheIcon = this.props.icon
     return (
       <div className="filters">
         <button
@@ -15,8 +15,8 @@ class Button extends Component {
           <span>{this.props.name}</span>
         </button>
       </div>
-    );
+    )
   }
 }
 
-export default Button;
+export default Button
