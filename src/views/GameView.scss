@@ -26,13 +26,13 @@
 }
 
 .alice-carousel__wrapper {
-  margin: 20px auto;
+  padding: 20px;
   position: relative;
 }
 
 .alice-carousel__wrapper li.__active {
   transition-duration: 0.5s;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .alice-carousel__stage-item {

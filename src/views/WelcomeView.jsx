@@ -57,17 +57,17 @@ function WelcomeView() {
           play the game.{' '}
         </p>
         <p>
-          <strong>Persona cards</strong> represent someone living in the Mars
-          One colony, who moved with high hopes and objectives but in time
-          developed problems and pains, making life on Mars miserable.
+          <span>Persona cards</span> represent someone living in the Mars One
+          colony, who moved with high hopes and objectives but in time developed
+          problems and pains, making life on Mars miserable.
         </p>
         <p>
-          <strong>Challenge cards</strong> are obstacles the colony is trying to
+          <span>Challenge cards</span> are obstacles the colony is trying to
           overcome: problems that the whole society is faced with, and that are
           common to all persona cards.
         </p>
         <p>
-          <strong>Tool cards</strong> give knowledge on classic old-time
+          <span>Tool cards</span> give knowledge on classic old-time
           technologies from the 2010's and new modern technologies that the
           colony is now deploying on Mars One.
         </p>

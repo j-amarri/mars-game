@@ -36,14 +36,13 @@ class GameView extends React.Component {
   }
 
   componentDidMount() {
-    // console.log('Mounted', dataAll)
     this.setState({
       loaded: true
     });
   }
 
   filterByCategory = event => {
-    const category = event.target.value;
+    const category = event.currentTarget.value;
     this.setState({
       category
     });

@@ -3,15 +3,11 @@ import './style.scss';
 
 class Button extends Component {
   render() {
-    const TheIcon = this.props.icon;
+    const Icon = this.props.icon;
     return (
       <div className="filters">
-        <button
-          value={this.props.value}
-          onClick={this.props.onClick}
-          style={this.props.style}
-        >
-          <img src={TheIcon} alt="" />
+        <button value={this.props.value} onClick={this.props.onClick}>
+          <img src={Icon} alt="icon" />
           <span>{this.props.name}</span>
         </button>
       </div>

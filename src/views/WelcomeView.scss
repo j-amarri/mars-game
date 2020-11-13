@@ -60,7 +60,7 @@
 }
 
 .button-game {
-  margin-top: 15.5px;
+  margin-top: 40px;
   margin-bottom: 30px;
   height: 48px;
   width: 295px;
@@ -86,6 +86,14 @@
   flex-direction: column;
   padding: 50px 40px;
   background: #000000;
+
+  span {
+    font-family: 'Archivo Black';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.22px;
+    line-height: 19px;
+  }
 }
 
 .how-bar {
