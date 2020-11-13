@@ -1,9 +1,22 @@
+@use "./../../assets/colors.scss";
+
 .header {
+  font-family: 'Roboto';
+  margin: 30px 22px;
+  font-weight: 700;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // padding: 10px 10px;
-  // background-color: #f5cb5c;
-  // color: #333533;
+  color: colors.$primary-col;
+}
+
+.sound {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  span {
+    margin-left: 3px;
+  }
 }

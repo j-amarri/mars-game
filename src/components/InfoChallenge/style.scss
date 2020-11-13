@@ -1,0 +1,41 @@
+@use "./../../assets/colors.scss";
+
+.challenge-info {
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition-delay: 2s;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #b4bff3;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+.card-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+
+  h3 {
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}

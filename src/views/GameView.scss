@@ -1,11 +1,42 @@
-@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+@import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 
 .game {
-  // margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./../assets/images/background.png);
 }
 
-.card {
-  height: 300px;
-  margin: 20px;
-  border: 1px solid white;
+.categories-bar {
+  display: flex;
+  margin: 30px 10px;
+  margin-bottom: 0px;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  button {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    width: 80px;
+    height: 80px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+  }
+}
+
+.alice-carousel__wrapper {
+  padding: 20px;
+  position: relative;
+}
+
+.alice-carousel__wrapper li.__active {
+  transition-duration: 0.5s;
+  transform: scale(1.3);
+}
+
+.alice-carousel__stage-item {
+  margin: 0px auto;
+  padding: 30px 20px;
+  width: 20px;
 }

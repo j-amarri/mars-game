@@ -1,0 +1,20 @@
+.card {
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+  }
+
+  button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 16%;
+    right: 16%;
+  }
+
+  .star-icon {
+    height: 20px;
+  }
+}
