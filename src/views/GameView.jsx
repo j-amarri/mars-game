@@ -19,7 +19,8 @@ import ToolsInactive from './../assets/icons/tools-inactive.svg';
 import ToolsActive from './../assets/icons/tools-active.svg';
 import ChallengesInactive from './../assets/icons/challenges-inactive.svg';
 import ChallengesActive from './../assets/icons/challenges-active.svg';
-import DeckInactive from './../assets/icons/deck-inactive.svg';
+import DeckInactive from './../assets/icons/star.svg';
+import DeckActive from './../assets/icons/star-full.svg';
 
 const responsive = {
   0: { items: 1 },
@@ -148,13 +149,26 @@ class GameView extends React.Component {
           />
 
           <Button
-            icon={DeckInactive}
+            icon={this.state.category === 'starred' ? DeckActive : DeckInactive}
             value={'starred'}
             name={'Your deck'}
             //style={{ border: '1px solid green', color: 'green' }}
             onClick={this.filterByCategory}
           />
         </div>
+        {this.state.category === 'starred' && this.state.starred.length === 0 && (
+          <div className="empty-state">
+            <h4>Your deck looks still empty...</h4>
+            <p>
+              Save here the cards your team will play with and create your own
+              deck.
+            </p>
+            <p>
+              Tap on the star icon on the top right corner of a card to save it
+              between your favourites here.
+            </p>
+          </div>
+        )}
         <Carousel
           paddingLeft={60}
           paddingRight={60}
@@ -177,6 +191,7 @@ class GameView extends React.Component {
           <InfoChallenge {...cardsToShow[this.state.cardIndex]} />
           <InfoTool {...cardsToShow[this.state.cardIndex]} />
         </Fade>
+
         <Footer />
       </div>
     );
