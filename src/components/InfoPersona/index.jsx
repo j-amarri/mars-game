@@ -1,11 +1,11 @@
-import React from 'react';
-import { ReactComponent as Motto } from './../../assets/icons/motto.svg';
-import { ReactComponent as Objectives } from './../../assets/icons/objectives.svg';
-import { ReactComponent as Pains } from './../../assets/icons/pains.svg';
-import './style.scss';
+import React from 'react'
+import { ReactComponent as Motto } from './../../assets/icons/motto.svg'
+import { ReactComponent as Objectives } from './../../assets/icons/objectives.svg'
+import { ReactComponent as Pains } from './../../assets/icons/pains.svg'
+import './style.scss'
 
-const InfoPersona = props => {
-  if (props.type !== 'persona') return <div></div>;
+const InfoPersona = (props) => {
+  if (props.type !== 'persona') return <div></div>
   return (
     <div className="persona-info">
       <h2 className="title">{props.title}</h2>
@@ -14,7 +14,7 @@ const InfoPersona = props => {
         <Motto />
         <h3>Motto</h3>
       </div>
-      <p className="card-detail">"{props.quote}"</p>
+      <p className="card-detail">"{props.motto}"</p>
       <div className="card-heading">
         <Objectives />
         <h3>Objectives</h3>
@@ -34,7 +34,7 @@ const InfoPersona = props => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default InfoPersona;
+export default InfoPersona
