@@ -13,12 +13,12 @@ import InfoTool from '../components/InfoTool';
 import Footer from './../components/Footer';
 import Button from './../components/Button';
 
-import PersonasInactive from './../assets/icons/personas-inactive.svg';
-import PersonasActive from './../assets/icons/personas-active.svg';
-import ToolsInactive from './../assets/icons/tools-inactive.svg';
-import ToolsActive from './../assets/icons/tools-active.svg';
-import ChallengesInactive from './../assets/icons/challenges-inactive.svg';
-import ChallengesActive from './../assets/icons/challenges-active.svg';
+import PersonasInactive from './../assets/icons/personas-inactive.png';
+import PersonasActive from './../assets/icons/personas-active.png';
+import ToolsInactive from './../assets/icons/tools-inactive.png';
+import ToolsActive from './../assets/icons/tools-active.png';
+import ChallengesInactive from './../assets/icons/challenges-inactive.png';
+import ChallengesActive from './../assets/icons/challenges-active.png';
 import DeckInactive from './../assets/icons/star.svg';
 import DeckActive from './../assets/icons/star-full.svg';
 
@@ -114,7 +114,7 @@ class GameView extends React.Component {
             style={
               this.state.category === 'persona'
                 ? { color: '#eb5d3a' }
-                : { color: 'white' }
+                : { color: 'white', fontFamily: 'Roboto Light' }
             }
             onClick={this.filterByCategory}
           />
@@ -127,7 +127,7 @@ class GameView extends React.Component {
             style={
               this.state.category === 'tool'
                 ? { color: '#ffa55e' }
-                : { color: 'white' }
+                : { color: 'white', fontFamily: 'Roboto Light' }
             }
             onClick={this.filterByCategory}
           />
@@ -143,7 +143,7 @@ class GameView extends React.Component {
             style={
               this.state.category === 'challenge'
                 ? { color: '#b4bff3' }
-                : { color: 'white' }
+                : { color: 'white', fontFamily: 'Roboto Light' }
             }
             onClick={this.filterByCategory}
           />
@@ -152,6 +152,11 @@ class GameView extends React.Component {
             icon={this.state.category === 'starred' ? DeckActive : DeckInactive}
             value={'starred'}
             name={'Your deck'}
+            style={
+              this.state.category === 'starred'
+                ? { color: 'white' }
+                : { fontFamily: 'Roboto Light' }
+            }
             //style={{ border: '1px solid green', color: 'green' }}
             onClick={this.filterByCategory}
           />

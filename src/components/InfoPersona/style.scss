@@ -1,6 +1,7 @@
 @use "./../../assets/colors.scss";
 
 .persona-info {
+  margin-bottom: 100px;
   .subtitle {
     font-size: 1rem;
     text-align: center;
@@ -27,6 +28,10 @@
     // margin-left: 0px;
     // margin-left: 12px;
     // font-size: 18px;
+  }
+
+  img {
+    width: 32px;
   }
 }
 

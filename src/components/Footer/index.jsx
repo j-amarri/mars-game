@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <div className="contributors">
         <p>Design: Martina Bonetti, Marjorie Broudieu</p>
-        <p>Website: Alessandro Amarri</p>
+        <p>Website development: Alessandro Amarri</p>
       </div>
     </footer>
   );
