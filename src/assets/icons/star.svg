@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E24EC181-DA72-46F9-88D5-1D9AEC0A8DD4</title>
+    <g id="Final-designs---cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Persona---2.-base-manager" transform="translate(-247.000000, -274.000000)">
+            <g id="card/active/persona" transform="translate(53.000000, 233.000000)">
+                <g id="icon/favourites/unselected" transform="translate(194.000000, 41.000000)">
+                    <rect id="Rectangle" x="4" y="4" width="24" height="24"></rect>
+                    <polygon id="Star" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" points="16 22.5 9.53436222 25.8991869 10.7691892 18.6995935 5.53837832 13.6008131 12.7671811 12.5504065 16 6 19.2328189 12.5504065 26.4616217 13.6008131 21.2308108 18.6995935 22.4656378 25.8991869"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

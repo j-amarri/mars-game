@@ -1,13 +1,11 @@
-[
-  {
+[{
     "type": "persona",
     "title": "The Cyborg Scientist",
     "image": "/cards/persona/the-cyborg-scientist.png",
-    "quote": "The only way forward is to sacrifice myself to save the earth",
-    "name": "Martha",
-    "points": 2,
+    "quote": "Excited for new discoveries, Martha accepted her consciousness to be transferred in a robot to explore the red planet better",
+    "motto": "The only way is forward, and I am ready to sacrifice myself to save the earth",
     "objectives": [
-      "Living' fast-forward experiment",
+      "Push boundaries of science",
       "Recognition within the scientific community",
       "Make history"
     ],
@@ -20,20 +18,19 @@
   },
   {
     "type": "persona",
-    "title": "The Space Migrant",
-    "image": "/cards/persona/the-space-migrant.png",
-    "quote": "I miss my family terribly but I know that this job will pay for their education so they do not have to do the same job than me",
-    "name": "Selim",
-    "points": 3,
+    "title": "The Base Manager",
+    "image": "/cards/persona/the-base-manager.png",
+    "quote": "Responsible for managing Eagle Base and enforcing laws, Otto is an independently elected official",
+    "motto": "We have the unique opportunity to build a new kind of society",
     "objectives": [
-      "High salary, able to provide for the family",
-      "Exciting professional challenges",
-      "Community, sense of belonging"
+      "Keep order in the colony",
+      "Ensure the base is attractive for new businesses",
+      "Good quality of life on the base"
     ],
     "pains": [
-      "Loneliness, misses family",
-      "Struggles to adapt to the Mars way of living, culture shock",
-      "Social inequality"
+      "Interference of political tensions from planet Earth on Mars",
+      "Corporations taking advantage of legal no-mans-land",
+      "Unhappy citizens"
     ],
     "starred": false
   },
@@ -41,17 +38,71 @@
     "type": "persona",
     "title": "The Earth Activist",
     "image": "/cards/persona/the-earth-activist.png",
-    "quote": "Why are we spending these thrillions of euros for Mars exploration? We need this money to save the planet Earth!",
-    "name": "Maya",
-    "points": 3,
+    "quote": "Concerned that the attention will shift uniquely to Mars, Maya infiltrated the Mars base to summon authorities and activate the community on-site",
+    "motto": "Why are we spending these thrillions of euros for Mars? We need this money to save the Earth!",
     "objectives": [
-      "Echo of admiration from the earth activist movement",
-      "Grow the movement",
-      "Unlocking of Influential public relations"
+      "Living in harmony with the natural world",
+      "Growing the movement",
+      "Unlocking of influential public relations"
     ],
     "pains": [
-      "Worried that this will lead to the end of planet earth",
-      "Struggles with the lack of fund to overcome earth-related issues such as dramatic pollution"
+      "Pollution on both on Mars & Earth",
+      "Lack of funds to overcome earth-related issues",
+      "Not being taken seriously"
+    ],
+    "starred": false
+  },
+  {
+    "type": "persona",
+    "title": "The Mars Alien",
+    "image": "/cards/persona/the-mars-alien.png",
+    "quote": "A representative of the Alien tribes of Mars, 5*7#@-  has witnessed the arrival of the first colonists and wish to resist the invasion",
+    "motto": "We don’t want to become the next human colony… If they want to stay, they have to learn how to live with us",
+    "objectives": [
+      "Survival of the tribe",
+      "Peaceful cohabitation with humans",
+      "Promote their culture"
+    ],
+    "pains": [
+      "Exploitation by the colonists",
+      "Pollution of the environment",
+      "Fighting in a way that is peaceful"
+    ],
+    "starred": false
+  },
+  {
+    "type": "persona",
+    "title": "The Space Migrant",
+    "image": "/cards/persona/the-space-migrant.png",
+    "quote": "Stuck for years in low paying jobs on planet Earth, Selim accepted a job on Mars in the hope of giving a better future to his family",
+    "motto": "I miss my family but I know that this job will pay for my kids’ education... They won’t have to do the same job as me",
+    "objectives": [
+      "High salary, being able to provide for the family",
+      "Exciting professional challenges",
+      "Community, sense of belonging"
+    ],
+    "pains": [
+      "Loneliness",
+      "Struggles with the Mars way of living, culture shock",
+      "Negative beliefs on migrants"
+    ],
+    "starred": false
+  },
+  {
+    "type": "persona",
+    "title": "The Space Tourist",
+    "image": "/cards/persona/the-space-tourist.png",
+    "quote": "Excited to experience the first lot of commercial leisure routes to Mars, Hui wants to expand his list of visited places",
+    "motto": "After cruising across Antarctica the Atlantic, I cannot wait to experience travel on another planet!",
+    "objectives": [
+      "Discovery & new experiences",
+      "Gaining new followers on social media",
+      "Find a side job on Mars while travelling"
+    ],
+    "pains": [
+      "High traveling costs wiping away all his savings",
+      "Limited comfort",
+      "Loneliness"
     ],
     "starred": false
   },
@@ -60,70 +111,110 @@
     "title": "AI powered 'Cobots'",
     "subtitle": "Collaborative robots (‘cobots’) are AI-enabled systems and robotics, representing an integral part of the Mars One community",
     "image": "/cards/tools/ai-chatbot.png",
-    "points": 3,
     "what": [
       "Reduce the need for humans in clean rooms",
-      "Make more reliable all satellites and spacecraft manufacturing steps that can be error-prone",
-      "Speed up the response of satellites to natural disasters",
-      "Analyse and review weather and environmental satellite images to monitor Earth and Mars"
+      "Speed up the response of satellites during natural disasters",
+      "Analyse satellite images to monitor  environmental conditions on Earth and Mars"
     ],
     "how": [
       "Uses the power of deep learning and AI-enabled recognition",
-      "Detailed imagery from a satellite can help those on the ground to see victims, determine the course of the disaster, and more"
+      "Many small cobots can assemble to carry out large tasks"
     ],
     "starred": false
   },
   {
     "type": "tool",
-    "title": "Circadian rhytm control",
+    "title": "Circadian Rhythm control",
     "subtitle": "The Lighting System to Improve Circadian Rhythm Control was designed and built to help regulate the sleep cycles of Mars One colonists",
     "image": "/cards/tools/rhytm-control.png",
-    "points": 1,
     "what": [
-      "Induces a hibernation state during long-duration spaceflight",
-      "Prevents sleep disorders on Mars caused by a lack of a true diurnal cycle of sunlight (encompassing the same range of colour temperatures and intensities of sunlight experienced on Earth)"
+      "Induce a hibernation state during long-duration spaceflight",
+      "Prevent sleep disorders on Mars caused by the lack of a true cycle of sunlight"
     ],
     "how": [
-      "The intensity of light gets brighter as you proceed through the beginning of the workday",
-      "The light temperature gets progressively higher and the colour cooler to mimic the diurnal cycle",
-      "As the workday ends, the light gets only slightly dimmer but significantly lower in temperature and warmer in colour",
-      "As the sleep cycle begins, the light intensity dims, exposing occupants to even less blue light"
+      "At the beginning of the workday, the intensity of the light gets brighter as time goes by",
+      "The light colour evolves throughout the day to replicate natural light"
     ],
     "starred": false
   },
   {
     "type": "tool",
-    "title": "CRISPR",
+    "title": "CRISPR Gene Editing",
+    "subtitle": "CRISPRs are specialised stretches of DNA. CRISPR technology allows researchers to easily alter DNA sequences and modify gene function",
     "image": "/cards/tools/crispr-gene.png",
-    "points": 3,
     "what": [
-      "Mars One colonists have modified DNA to prevent radiation-induced genetic damage",
-      "Address global food shortages by genetically modifying crops to stay fresh longer during longdistance transport",
-      "Allows crops to adjust and be fit to Mars atmosphere"
+      "Prevent radiation-induced genetic damage for colonists",
+      "Address global food shortages by genetically modifying crops (e.g staying fresh for longer during long-distance transport)",
+      "Allow crops to adjust and be fit to Mars atmosphere"
     ],
     "how": [
-      "The protein Cas9 (or CRISPR-associated) is an enzyme that acts like a pair of molecular scissors, capable of cutting strands of DNA",
-      "Long-term space travel and colonization of other planets exposes astronauts to the harsh environment of space for extended periods of time, so self-repairing DNA makes astronauts Sresistant to radiation"
+      "Strands of DNA are cut with the protein Cas9 (or \"CRISPR-associated\") in order to induce new properties in a living organism "
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "Mars Coin",
+    "subtitle": "Marscoin is the largest cryptocurrency platform of the Mars One colony. It supports smart contracts between all kinds of parties in any type of currency",
+    "image": "/cards/tools/mars-coin.png",
+    "what": [
+      "Enables universal trade between people, machines and the planet in a service-based economy",
+      "Allows direct trade: no need for a human intermediary to accept the transaction"
+    ],
+    "how": [
+      "A smart contract is a transaction protocol that automatically executes when pre-defined conditions are met",
+      "All Earth currencies and all resources available on Mars can be exchanged for Marscoins"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "Neural Implants",
+    "subtitle": "Neuralink is a neural implant that all Mars One colonists have been equipped with",
+    "image": "/cards/tools/neural-implants.png",
+    "what": [
+      "Fast knowledge transfer",
+      "Remove language barriers by translating other languages directly in the brain",
+      "Boost memory monitor health levels on the Mars base"
+    ],
+    "how": [
+      "Neuralink devices consist of a tiny chip connected to the brain with 1,000 wires",
+      "The chip connects via Bluebooth to a computer or smartphone that the user can control"
+    ],
+    "starred": false
+  },
+  {
+    "type": "tool",
+    "title": "Social Credit System",
+    "subtitle": "The Social Credit System is a national reputation system developed by Mars One, powered by facial recognition systems and big data analysis",
+    "image": "/cards/tools/social-credit-system.png",
+    "what": [
+      "Establish a unified record system of trustworthiness for individuals, businesses and the government",
+      "Prioritise 'good behaviour' (e.g people with high credit ratings may wait less time at hospitals, get discounts at hotels etc...)"
+    ],
+    "how": [
+      "The system utilizes numerical score as the reward and punishment mechanism",
+      "Negative credit: financial dishonesty, loud music and eating in public transport, violating traffic rules and not recycling",
+      "Positive credit: donating blood or to charity and volunteering for community services"
     ],
     "starred": false
   },
   {
     "type": "challenge",
     "title": "Isolation",
-    "subtitle": "CRISPRs are specialised stretches of DNA. CRISPR technology allows researchers to easily alter DNA sequences and modify gene function",
+    "subtitle": "Despite experiments conducted to test human reactions to isolation, Mars One colonists are suffering from the restricted environment and smaller communities, leading to rising tensions in the base",
     "image": "/cards/challenges/isolation.png",
-    "points": 6,
     "questions": [
       "How might we improve the mental health of Mars citizens so that they feel less isolated?",
-      "Which products & services can you develop to reduce anxiety from the simulated environment & isolation?"
+      "Which products & services can be developed to reduce anxiety from the simulated environment & isolation?"
     ],
     "starred": false
   },
   {
     "type": "challenge",
-    "title": "Social structures",
+    "title": "Inequal Social Structures",
+    "subtitle": "Robots are an integral part of Mars' society, but boundaries are still blurred. Inequalities from the earth are duplicated within humans",
     "image": "/cards/challenges/social-structure.png",
-    "points": 3,
     "questions": [
       "How does your product change or enable new ways to interact?",
       "In what ways might the community itself be an asset?"
@@ -135,7 +226,6 @@
     "title": "Limited Food Resources",
     "subtitle": "Trade of goods between the earth & Mars are limited, increasing the need for  innovative food solutions that create rituals and limit waste at every stage of the chain",
     "image": "/cards/challenges/food.png",
-    "points": 6,
     "questions": [
       "How might your idea replace single-use products? What would be its different life cycles?",
       "Which services around food could you envision to develop new habits or experiences?"

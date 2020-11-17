@@ -13,13 +13,14 @@ import InfoTool from '../components/InfoTool';
 import Footer from './../components/Footer';
 import Button from './../components/Button';
 
-import PersonasInactive from './../assets/icons/personas-inactive.svg';
-import PersonasActive from './../assets/icons/personas-active.svg';
-import ToolsInactive from './../assets/icons/tools-inactive.svg';
-import ToolsActive from './../assets/icons/tools-active.svg';
-import ChallengesInactive from './../assets/icons/challenges-inactive.svg';
-import ChallengesActive from './../assets/icons/challenges-active.svg';
-import DeckInactive from './../assets/icons/deck-inactive.svg';
+import PersonasInactive from './../assets/icons/personas-inactive.png';
+import PersonasActive from './../assets/icons/personas-active.png';
+import ToolsInactive from './../assets/icons/tools-inactive.png';
+import ToolsActive from './../assets/icons/tools-active.png';
+import ChallengesInactive from './../assets/icons/challenges-inactive.png';
+import ChallengesActive from './../assets/icons/challenges-active.png';
+import DeckInactive from './../assets/icons/star.svg';
+import DeckActive from './../assets/icons/star-full.svg';
 
 const responsive = {
   0: { items: 1 },
@@ -113,7 +114,7 @@ class GameView extends React.Component {
             style={
               this.state.category === 'persona'
                 ? { color: '#eb5d3a' }
-                : { color: 'white' }
+                : { color: 'white', fontFamily: 'Roboto Light' }
             }
             onClick={this.filterByCategory}
           />
@@ -126,7 +127,7 @@ class GameView extends React.Component {
             style={
               this.state.category === 'tool'
                 ? { color: '#ffa55e' }
-                : { color: 'white' }
+                : { color: 'white', fontFamily: 'Roboto Light' }
             }
             onClick={this.filterByCategory}
           />
@@ -142,19 +143,37 @@ class GameView extends React.Component {
             style={
               this.state.category === 'challenge'
                 ? { color: '#b4bff3' }
-                : { color: 'white' }
+                : { color: 'white', fontFamily: 'Roboto Light' }
             }
             onClick={this.filterByCategory}
           />
 
           <Button
-            icon={DeckInactive}
+            icon={this.state.category === 'starred' ? DeckActive : DeckInactive}
             value={'starred'}
             name={'Your deck'}
+            style={
+              this.state.category === 'starred'
+                ? { color: 'white' }
+                : { fontFamily: 'Roboto Light' }
+            }
             //style={{ border: '1px solid green', color: 'green' }}
             onClick={this.filterByCategory}
           />
         </div>
+        {this.state.category === 'starred' && this.state.starred.length === 0 && (
+          <div className="empty-state">
+            <h4>Your deck looks still empty...</h4>
+            <p>
+              Save here the cards your team will play with and create your own
+              deck.
+            </p>
+            <p>
+              Tap on the star icon on the top right corner of a card to save it
+              between your favourites here.
+            </p>
+          </div>
+        )}
         <Carousel
           paddingLeft={60}
           paddingRight={60}
@@ -177,6 +196,7 @@ class GameView extends React.Component {
           <InfoChallenge {...cardsToShow[this.state.cardIndex]} />
           <InfoTool {...cardsToShow[this.state.cardIndex]} />
         </Fade>
+
         <Footer />
       </div>
     );
